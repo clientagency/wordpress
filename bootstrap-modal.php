@@ -1,4 +1,5 @@
-<?php if ( is_user_logged_in() ) { ?>
+<?php if ( 'yes' == get_field('show_modal', 'option') ): ?>
+
 
   <script src="<?php bloginfo( 'template_directory' ); ?>/js/js.cookie.js"></script>
   <script>
@@ -14,12 +15,8 @@
   });
   </script>
 
-<?php } ?>
 
-
-
-<?php if ( 'yes' == get_field('show_modal', 'option') ): ?>
-   <!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade" id="siteModal" tabindex="-1" role="dialog" aria-labelledby="Notice" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content">
