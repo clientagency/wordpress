@@ -1,3 +1,5 @@
+<?php 
+
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	acf_add_options_sub_page('General');
@@ -18,3 +20,7 @@ add_filter( 'acf/validate_post_id', function( $post_id, $original_post_id ){
 
   return $post_id; //FILTER! MUST RETURN!
 }, 10, 2 );
+
+
+
+?>
