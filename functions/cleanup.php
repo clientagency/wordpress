@@ -15,10 +15,6 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action('wp_head', 'meta_generator_tag');
 
-// Sidebar
-add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
-add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
-
 /*
 Show less info to users on failed login for security.
 (Will not let a valid username be known.)
